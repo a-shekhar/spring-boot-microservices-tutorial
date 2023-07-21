@@ -23,3 +23,28 @@ OR
 eureka.instance.hostname=localhost
 
 
+
+Debugging Problems with Spring Cloud Gateway - V2
+Debugging microservices problems can be difficult as there are multiple components involved.
+
+Step by Step instructions is provided in the troubleshooting guide to help you troubleshoot frequently occurring problems.
+
+Using the Chrome Browser is recommended.
+
+
+
+COMPLETE DEBUGGING GUIDE
+
+https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#spring-cloud-api-gateway---step-22-to-step-25
+
+
+
+TOP Recommendation from Debugging Guide:
+
+(6) Some student reported success when using lower-case-service-id instead of spring.cloud.gateway.discovery.locator.lowerCaseServiceId. See if it helps!
+
+spring.cloud.gateway.discovery.locator.enabled=true
+ 
+spring.cloud.gateway.discovery.locator.lower-case-service-id=true
+
+
