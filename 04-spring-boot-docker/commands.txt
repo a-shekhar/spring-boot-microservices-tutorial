@@ -1,0 +1,68 @@
+1. docker images -> to see the full list of doacker images installed
+
+2. docker run --name <name> <repositoty>:<tag>   -> to run the docker image
+docker run --name redis-latest redis:latest
+
+3. docker ps ->  to see list of containers  running
+
+4.  docker stop <containerid> -> to stop the docker container
+
+5.  docker stop <containername> -> to stop the docker container
+
+6. docker ps -a -> to  to see full list of containers
+
+7.  docker start <containerid> -> to start the docker container
+
+8.  docker satrt <containername> -> to start the docker container
+
+9.  docker rm <containerid> -> to remove the docker container
+
+10.  docker rm <containername> -> to remove the docker container
+
+11. docker run --name <name> -p<host machine port>:<docker port> redis:latest -> run the image at specified host port no
+
+docker run --name redis-latest -p6379:6379 redis:latest
+
+12. docker run --name <name> -p<host machine port>:<docker port> -d redis:latest -> run the image at specified host port no in deatteched mode
+
+docker run --name redis-latest -p6379:6379 -d redis:latest
+
+13. docker images -a -> get all docker images
+
+14. docker inspect <IMAGE ID> -> to inspect the docker image
+
+15. docker inspect <CONTAINER ID> -> to inspect the docker container
+
+16.  docker logs <CONTAINER ID> -> to inspect the docker container logs
+
+17. docker exec -it <CONTAINER ID> /bin/sh -> to go inside the docker container in interactive mode 
+
+18. docker exec -it <CONTAINER NAME> /bin/sh -> to go inside the docker container in interactive mode 
+
+19.  docker rmi <IMAGE ID> -> to remove the docker image
+
+20. docker rmi <IMAGE NAME> -> to remove the docker image
+
+21. docker system prune -a -> will delete everything from system
+
+22.  docker build -t <name>:<version> <directory>  -> build the docker file
+
+docker build -t ashekharr/serviceregistry:0.0.1 . 
+
+23. docker image history <IMAGE ID> -> to get the history of image
+
+24. docker image history <IMAGE NAME> -> to get the history of image
+
+25. docker container pause <CONTAINER ID> -> to pause the container
+
+26. docker container unpause <CONTAINER ID> -> to un-pause the container
+
+27. docker container prune -> will prune all stopped container 
+
+28. docker events -> to check all the docker events
+
+29. docker top <container id> [ps options] -> to check the top process happening in the container
+
+30. docker stats -> to check docker related metrics 
+
+31 docker system df -> Gives docker entities details 
